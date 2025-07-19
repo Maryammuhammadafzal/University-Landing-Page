@@ -27,7 +27,16 @@ const Footer = () => {
                         {/* Logo */}
                         <div className="logo ">
                             <Image src='/images/logo.png' alt="image" width={200} height={200} />
+                            <div className="flex gap-3 flex-wrap h-auto  p-3">
+                            <FaFacebook size={24} />
+                            <FaXTwitter size={24} />
+                            <FaSquareInstagram size={24} />
+                            <FaLinkedin size={24} />
+                            <FaWhatsapp size={24} />
+
                         </div>
+                        </div>
+                        
                     </div>
 
                     <div className="max-sm:w-full max-sm:py-3 w-full p-3 h-auto ">
