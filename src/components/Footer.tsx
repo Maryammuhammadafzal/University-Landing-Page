@@ -1,4 +1,6 @@
 
+
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaSquareInstagram, FaLinkedin, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
@@ -18,31 +20,24 @@ const Footer = () => {
         },
     ];
     return (
-        <div className="w-full lato text-secondary h-auto gap-5 flex justify-center items-center p-3">
-            <div className=" w-[80%] max-lg:w-[95%] max-md:w-full  h-auto flex flex-col gap-4 justify-center items-center">
+        <div className="w-full lato bg-secondary text-primary h-auto gap-5 flex justify-center items-center py-10 px-3">
+            <div className=" w-[80%] max-lg:w-[95%] max-md:w-full  h-auto flex flex-col gap-10 justify-center items-center">
                 <div className="footerContent max-sm:justify-center w-full h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-between mb-3 gap-6 ">
                     <div className="left w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
                         {/* Logo */}
                         <div className="logo ">
-                            <Link href='/' className='w-auto h-auto'>
-                                <p className='logo text-[40px] font-semibold px-2'>LOGO</p>
-                            </Link>
+                            <Image src='/images/logo.png' alt="image" width={200} height={200} />
                         </div>
                     </div>
 
-                    <div className="middle max-sm:w-full max-sm:py-3 w-full p-3 h-auto ">
-                        <h4 className="text-secondary text-xl  lato capitalize max-lg:text-lg max-md:text-base">
-                            Pages
+                    <div className="max-sm:w-full max-sm:py-3 w-full p-3 h-auto ">
+                        <h4 className="text-primary text-xl  lato capitalize max-lg:text-lg max-md:text-base">
+                            Quick Links
                         </h4>
-                        <ul className="list-none text-base py-2  gap-1 flex flex-col ">
+                        <ul className="list-none text-base py-2  gap-2 flex flex-col ">
                             <li className="  font-normal">
                                 <a href="#" className="">
                                     Home
-                                </a>
-                            </li>
-                            <li className="  font-normal">
-                                <a href="#" className="">
-                                    Products
                                 </a>
                             </li>
                             <li className="  font-normal">
@@ -52,39 +47,58 @@ const Footer = () => {
                             </li>
                             <li className="  font-normal">
                                 <a href="#" className="">
+                                    Campus Life
+                                </a>
+                            </li>
+                            <li className="  font-normal">
+                                <a href="#" className="">
+                                    How To Apply
+                                </a>
+                            </li>
+                            <li className="  font-normal">
+                                <a href="#" className="">
+                                    Testimonial
+                                </a>
+                            </li>
+
+                            <li className="  font-normal">
+                                <a href="#" className="">
                                     Contact us
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div className="middle  max-sm:py-3 w-full p-3 h-auto">
-                        <h4 className="text-secondary text-xl lato capitalize max-lg:text-lg max-md:text-base">
-                            Get In Touch
+                        <h4 className="text-primary text-xl lato capitalize max-lg:text-lg max-md:text-base">
+                            Our Programs
                         </h4>
-                        <ul className="list-none py-2 gap-1 flex flex-col ">
+                        <ul className="list-none py-2 gap-2 flex flex-col ">
                             <li className="text-sm  font-normal ">
-                                4517 Washington Ave. Manchester, Kentucky 39495
+                                Undergraduate Programs
                             </li>
                             <li className="text-sm  font-normal">
-                                jessica.hanson@example.com
+                                Graduate Programs
                             </li>
                             <li className="text-sm  font-normal">
-                                (308) 555-0121
+                                Online Education
                             </li>
                         </ul>
                     </div>
                     <div className="left max-sm:w-full max-sm:px-3 gap-10  max-sm:py-3 w-full p-3  h-auto max-[900px]:w-full">
-                        <h4 className="text-secondary text-lg capitalize max-lg:text-base lato max-md:text-sm">
-                            Social Media
+                        <h4 className="text-primary text-lg capitalize max-lg:text-base lato max-md:text-sm">
+                            Contact Information
                         </h4>
-                        <div className="flex gap-x-10 gap-y-6 flex-wrap h-auto max-w-[200px]  py-1">
-                            <FaFacebook size={30} />
-                            <FaXTwitter size={30} />
-                            <FaSquareInstagram size={30} />
-                            <FaLinkedin size={30} />
-                            <FaWhatsapp size={30} />
-
-                        </div>
+                        <ul className="list-none py-2 gap-2 flex flex-col ">
+                            <li className="text-sm  font-normal ">
+                                [University Address]
+                            </li>
+                            <li className="text-sm  font-normal">
+                                [University Phone Number]
+                            </li>
+                            <li className="text-sm  font-normal">
+                                admissions@[youruniversity].edu
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className="copyright flex gap-4 justify-center items-center w-full h-auto py-5">
