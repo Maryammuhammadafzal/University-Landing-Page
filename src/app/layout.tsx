@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Athiti, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const athiti = Athiti({
+  variable: "--font-athiti",
   subsets: ["latin"],
+  weight: ['200' , '300' , '400', '500', '600' ,'700']
 });
 
 const geistMono = Geist_Mono({
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${athiti.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         <Footer/>
