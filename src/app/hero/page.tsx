@@ -4,10 +4,10 @@ import React from 'react'
 
 const HeroPage = () => {
   return (
-    <div className='w-full h-screen flex flex-col relative bg-secondary bg-blend-multiply items-center'>
-      <div className='w-full h-full bg-cover bg-center absolute top-0 left-0 bg-blend-multiply' style={{ backgroundImage: `url('/images/hero-bg.png')`}}>
+    <div className='w-full h-screen flex flex-col relative bg-secondary bg-blend-multiply items-center bg-cover bg-center' style={{ backgroundImage: `url('/images/hero-bg.png')`}}>
+      {/* <div className='w-full h-full  absolute top-0 left-0 bg-blend-multiply'> */}
       {/* <Image src='' alt='image' width={590} height={650} className='w-full h-full z-10 absolute bg-blend-multiply' /> */}
-      </div>
+      {/* </div> */}
      <div className='w-full h-full absolute top-0 left-0 z-20'>
        <div className='w-full h-[100px] flex justify-center  items-center'>
         <Header />
@@ -28,7 +28,7 @@ const HeroPage = () => {
           </div>
         </div>
         <div className='md:w-1/2 w-full h-auto flex justify-end items-center'>
-          <Image src='/images/hero-image.png' alt='image' width={590} height={650}  className='absolute w-[50%] md:h-[95%] h-[60%] md:top-9 bottom-0 right-0' />
+          <Image src='/images/hero-image.png' alt='image' width={590} height={650}  className='absolute lg:w-[45%] w-[50%] md:h-[95%] h-[60%] md:top-9 bottom-0 right-0' />
         </div>
       </div>
      </div>
