@@ -31,8 +31,9 @@ const ApplyCard = () => {
     return (
         <div className='lg:w-[85%] h-auto justify-between items-center flex flex-wrap'>
             {apply_data.map((item, index) => (
-                <div className='w-[247px] bg-white h-[247px] flex justify-center items-center'>
+                <div key={index} className='w-[247px] bg-white h-[247px] flex group justify-center items-center'>
                     <div className='w-full h-full border border-secondary rounded-lg flex relative'>
+                        <div className='w-10 h-10 transition-transform rounded-full group-hover:scale-100 scale-0 duration-300'></div>
                         <div className='w-full min-h-[100px] absolute top-5 left-4'>
                             <div className='w-full h-full flex flex-col gap-2 '>
                                 <h4 className='font-bold text-lg text-secondary'>{item.title}</h4>
@@ -41,10 +42,10 @@ const ApplyCard = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='w-full h-auto absolute bottom-0 right-0 min-h-[100px]'>
-                            <div className='w-full h-full relative flex justify-end items-end'>
+                        <div className='w-full h-auto absolute bottom-0 right-0 flex justify-end items-end min-h-[100px]'>
+                            <div className='w-full h-[60px] relative flex flex-col justify-end items-end'>
                                 <Image src='/images/vector.png' alt='image' width={600} height={440} className='absolute bottom-0 w-[100px] right-0' />
-                                <Image src={item.image} alt='image' width={600} height={440} className='w-[100px] absolute right-10 bottom-4' />
+                                <Image src={item.image} alt='image' width={600} height={440} className='w-[60px] absolute right-6 rotate-6 bottom-4' />
 
                             </div>
                         </div>
