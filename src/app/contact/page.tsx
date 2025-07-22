@@ -28,7 +28,7 @@ const ContactPage = () => {
                             <span className="font-bold text-secondary capitalize font-sans">Email: </span>
                             <span>info@[yourDomain]gmail.com</span>
                         </p>
-                        <p className="xs:text-lg text-base flex-col flex gap-3 pt-4 font-normal">
+                        <div className="xs:text-lg text-base flex-col flex gap-3 pt-4 font-normal">
                             <span className="font-bold text-secondary capitalize font-sans">Follow us: </span>
                             <div className="flex gap-3 flex-wrap h-auto text-[#C5A100]  p-3">
                                 <FaFacebook size={24} />
@@ -38,7 +38,7 @@ const ContactPage = () => {
                                 <FaWhatsapp size={24} />
 
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
 

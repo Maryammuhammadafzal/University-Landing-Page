@@ -32,10 +32,11 @@ const ApplyCard = () => {
         <div className='lg:w-[85%] h-auto justify-between items-center flex flex-wrap'>
             {apply_data.map((item, index) => (
                 <div key={index} className='w-[247px] bg-white h-[247px] flex group justify-center items-center'>
-                    <div className='w-full h-full border border-secondary rounded-lg flex relative'>
+                    <div className='w-full h-full border border-[#C5A100]/50 rounded-lg flex relative'>
                         <div className='w-10 h-10 transition-transform rounded-full group-hover:scale-100 scale-0 duration-300'></div>
                         <div className='w-full min-h-[100px] absolute top-5 left-4'>
                             <div className='w-full h-full flex flex-col gap-2 '>
+                                <h5 className='step text-2xl'>{item.step}</h5>
                                 <h4 className='font-bold text-lg text-secondary'>{item.title}</h4>
                                 <p className='text-secondary max-w-[200px]'>
                                     {item.description}
@@ -44,9 +45,12 @@ const ApplyCard = () => {
                         </div>
                         <div className='w-full h-auto absolute bottom-0 right-0 flex justify-end items-end min-h-[100px]'>
                             <div className='w-full h-[60px] relative flex flex-col justify-end items-end'>
-                                <Image src='/images/vector.png' alt='image' width={600} height={440} className='absolute bottom-0 w-[100px] right-0' />
-                                <Image src={item.image} alt='image' width={600} height={440} className='w-[60px] absolute right-6 rotate-6 bottom-4' />
-
+                                <Image src='/images/vector.png' alt='image' width={600} height={440} className='absolute bottom-0 w-[133px] h-[60px] right-0' />
+                                <Image src={item.image} alt='image' width={600} height={440} className='w-[45px] h-[45px] absolute right-8 rotate-6 bottom-6' />
+                                <div className={`flex flex-col gap-4 w-[42%] h-fit ${index === 0 &&  'bottom-10' || index === 1 && 'bottom-50' || index === 2 && 'bottom-30' || index === 3 && 'hidden'} absolute left-61 bg-white`}>
+                                    <hr className='w-full border border-[#C5A100]/50' />
+                                    <hr className='w-full border border-[#C5A100]/50' />
+                                </div>
                             </div>
                         </div>
                     </div>
