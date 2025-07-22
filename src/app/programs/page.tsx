@@ -1,4 +1,4 @@
-import ApplyCard from '@/components/ApplyCard'
+
 import Heading from '@/components/Heading'
 import ProgramCard from '@/components/ProgramCard'
 import React from 'react'

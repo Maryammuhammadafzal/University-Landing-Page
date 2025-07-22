@@ -25,7 +25,7 @@ const ProgramCard = () => {
                                   <div className='w-full h-full flex flex-col gap-2 items-center text-center justify-center '>
                                       <h4 className='font-bold text-3xl px-10'>{item.title}</h4>
                                       <p className='px-8'>
-                                          {item.description}
+                                         {`${item.description}`}
                                       </p>
                                   </div>
                               </div>

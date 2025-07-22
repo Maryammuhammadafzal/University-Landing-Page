@@ -5,9 +5,6 @@ import React from 'react'
 const HeroPage = () => {
   return (
     <div className='w-full h-screen flex flex-col relative bg-secondary bg-blend-multiply items-center bg-cover bg-center' style={{ backgroundImage: `url('/images/hero-bg.png')`}}>
-      {/* <div className='w-full h-full  absolute top-0 left-0 bg-blend-multiply'> */}
-      {/* <Image src='' alt='image' width={590} height={650} className='w-full h-full z-10 absolute bg-blend-multiply' /> */}
-      {/* </div> */}
      <div className='w-full h-full absolute top-0 left-0 z-20'>
        <div className='w-full h-[100px] flex justify-center  items-center'>
         <Header />

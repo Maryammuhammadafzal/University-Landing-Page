@@ -16,8 +16,8 @@ const ChoosePage = () => {
             <div className='md:w-1/2 max-md:max-w-md h-auto flex flex-col gap-5 xl:pl-13 lg:pl-14 md:pl-10 px-5 justify-center order-2'>
                 <Heading title='Why Choose Us?' />
                 <p className='sm:text-base text-sm pr-5 pl-2 max-w-lg text-secondary'>
-                    Life at [Your University Name] is more than just academics — it’s about building
-                    friendships, discovering passions, and creating memories.
+                   {` Life at [Your University Name] is more than just academics — it’s about building
+                    friendships, discovering passions, and creating memories.`}
                 </p>
                 <ul className="w-auto max-w-md h-auto p-2 flex gap-3 flex-col">
                     {choose_data.map((item , index) => (

@@ -10,7 +10,6 @@ const HowToApply = () => {
                 <p className='sm:text-base text-sm pr-5 pl-2 text-secondary'>
                     Whether you’re applying as a freshman, transfer student, international student, or for graduate studies — we’re here to guide you through every step of the process.
                 </p>
-
             </div>
             <ApplyCard />
 

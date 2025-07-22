@@ -1,4 +1,4 @@
-import Heading from '@/components/Heading'
+
 import Image from 'next/image'
 import React from 'react'
 
@@ -6,8 +6,6 @@ const BannerPage = () => {
     return (
         <div className='w-full h-auto  lg:my-20 lg:gap-0 md:my-14 gap-4 sm:my-8 my-4 flex justify-center items-center'>
             <div className='w-full h-full min-h-[400px] flex md:flex-row relative flex-col overflow-hidden bg-[#C5A100] justify-center md:items-center bg-center bg-cover bg-blend-multiply' style={{ backgroundImage : `url('/images/hero-bg.png')`}} >
-            {/* <div className='overlay absolute top-0 left-0 w-full h-[400px] z-10 bg-cover bg-center' style={{backgroundImage: 'url(`/images/hero-bg.png`)'}}></div> */}
-            {/* <Image src='/images/hero-bg.png' alt='image' width={600} height={440} className='object-cover absolute top-0 left-0 object-center z-10 w-full h-full' /> */}
             <div className='md:w-1/2 py-3 max-md:max-w-md h-auto flex flex-col gap-5 xl:pl-13 lg:pl-14 md:pl-10 px-5 justify-center'>
                 <h2 className='lg:text-5xl w-full sm:text-4xl text-3xl font-bold font-sans uppercase md:px-2 text-white'>
                     Research & Innovation
