@@ -89,7 +89,7 @@ const ContactPage = () => {
                             </div>
                         </div>
 
-                        <div className="grid items-center w-full max-w-md min-w-[550px] gap-3">
+                        <div className="grid items-center w-full max-w-md sm:min-w-[550px] gap-3">
                             <Label className="text-secondary" htmlFor="message">Your message</Label>
                             <div className="">
                                 <Textarea

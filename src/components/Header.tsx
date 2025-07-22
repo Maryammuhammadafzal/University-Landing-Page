@@ -22,8 +22,9 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <Link href='/' className='w-auto h-auto xl:mx-14 lg:mx-10 md:mx-7 sm:mx-4 mx-0 my-3'>
-                    <Image src='/images/logo.png' alt='logo' width={137} height={71} className='' />
+                <Link href='/' className='w-auto h-auto flex justify-center items-center relative xl:mx-14 lg:mx-10 md:mx-7 sm:mx-4 mx-0 my-3'>
+                <div className='absolute -top-5 sm:-left-5 left-6 -z-10 sm:w-[190px] w-[140px] md:h-[180px] sm:h-[150px] h-[100px] rounded-bl-[40px] rounded-br-[40px] bg-white'></div>
+                    <Image src='/images/header-logo.png' alt='logo' width={137} height={71} className='sm:mt-6 mt-2 sm:ml-1.5 ml-12 sm:w-[137px] w-[100px]' />
                 </Link>
 
                 <nav className='w-auto h-auto sm:flex hidden justify-center items-center'>
