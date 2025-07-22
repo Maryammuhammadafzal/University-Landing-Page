@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Athiti, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import HeroPage from "./hero/page";
 
 const athiti = Athiti({
   variable: "--font-athiti",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${athiti.variable} ${geistMono.variable} antialiased`}
       >
+         <HeroPage />
         {children}
         <Footer/>
       </body>
