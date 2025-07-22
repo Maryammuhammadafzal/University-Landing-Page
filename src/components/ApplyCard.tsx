@@ -33,18 +33,18 @@ const ApplyCard = () => {
             {apply_data.map((item, index) => (
                 <div className='w-[247px] bg-white h-[247px] flex justify-center items-center'>
                     <div className='w-full h-full border border-secondary rounded-lg flex relative'>
-                        <div className='w-full min-h-[100px] absolute top-5 left-3'>
-                            <div className='w-full h-full flex flex-col gap-3 '>
-                                <h4 className='font-semibold text-xl text-secondary'>{item.title}</h4>
-                                <p className='text-secondary'>
+                        <div className='w-full min-h-[100px] absolute top-5 left-4'>
+                            <div className='w-full h-full flex flex-col gap-2 '>
+                                <h4 className='font-bold text-lg text-secondary'>{item.title}</h4>
+                                <p className='text-secondary max-w-[200px]'>
                                     {item.description}
                                 </p>
                             </div>
                         </div>
                         <div className='w-full h-auto absolute bottom-0 right-0 min-h-[100px]'>
-                            <div className='w-full h-full flex justify-end items-end'>
-                                <Image src='/images/vector.png' alt='image' width={600} height={440} className='' />
-                                <Image src={item.image} alt='image' width={600} height={440} className='' />
+                            <div className='w-full h-full relative flex justify-end items-end'>
+                                <Image src='/images/vector.png' alt='image' width={600} height={440} className='absolute bottom-0 w-[100px] right-0' />
+                                <Image src={item.image} alt='image' width={600} height={440} className='w-[100px] absolute right-10 bottom-4' />
 
                             </div>
                         </div>
