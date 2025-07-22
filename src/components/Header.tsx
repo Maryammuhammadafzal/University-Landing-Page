@@ -12,7 +12,7 @@ const Header = () => {
       }
     }, [])
     return (
-        <div className='w-full sm:h-[100px] h-auto bg-secondary flex flex-col relative justify-center items-center'>
+        <div className='w-full sm:h-[100px] h-auto text-white  flex flex-col relative justify-center items-center'>
             <div className='sm:w-auto w-[98%] flex sm:justify-center justify-between items-center gap-3 h-auto'>
                 <nav className='w-auto h-auto sm:flex hidden justify-center items-center'>
                     <ul className='w-auto h-auto flex lg:gap-5 md:gap-3 gap-2 lg:text-lg md:text-base sm:text-sm text-xs font-sans justify-center items-center'>
