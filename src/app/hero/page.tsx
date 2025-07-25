@@ -4,7 +4,7 @@ import React from 'react'
 
 const HeroPage = () => {
   return (
-    <div className='w-full lg:h-screen sm:h-[60vh] flex flex-col relative bg-secondary bg-blend-multiply items-center bg-cover bg-center' style={{ backgroundImage: `url('/images/hero-bg.png')`}}>
+    <div className='w-full lg:h-screen sm:h-[60vh] h-[90vh] flex flex-col relative bg-secondary bg-blend-multiply items-center bg-cover bg-center' style={{ backgroundImage: `url('/images/hero-bg.png')`}}>
      <div className='w-full h-full absolute top-0 left-0 z-20'>
        <div className='w-full h-[100px] flex justify-center  items-center'>
         <Header />
