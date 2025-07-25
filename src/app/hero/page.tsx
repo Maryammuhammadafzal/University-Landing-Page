@@ -24,7 +24,7 @@ const HeroPage = () => {
             </button>
           </div>
         </div>
-        <div className='md:w-1/2 w-full h-auto flex justify-end items-center'>
+        <div className='md:w-1/2 w-full h-auto flex sm:justify-end justify-center items-center'>
           <Image src='/images/hero-image.png' alt='image' width={590} height={650}  className='absolute lg:w-[45%] w-[50%] md:h-[95%] h-[60%] md:top-9 bottom-0 right-0' />
         </div>
       </div>
