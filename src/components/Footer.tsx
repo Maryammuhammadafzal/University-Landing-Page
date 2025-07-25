@@ -45,33 +45,28 @@ const Footer = () => {
                         </h4>
                         <ul className="list-none text-base py-2  gap-2 flex flex-col ">
                             <li className="  font-normal">
-                                <a href="#" className="">
+                                <a href="/" className="">
                                     Home
                                 </a>
                             </li>
                             <li className="  font-normal">
-                                <a href="#" className="">
+                                <a href="/about" className="">
                                     About Us
                                 </a>
                             </li>
                             <li className="  font-normal">
-                                <a href="#" className="">
-                                    Campus Life
-                                </a>
-                            </li>
-                            <li className="  font-normal">
-                                <a href="#" className="">
+                                <a href="/howtoapply" className="">
                                     How To Apply
                                 </a>
                             </li>
                             <li className="  font-normal">
-                                <a href="#" className="">
+                                <a href="/testimonial" className="">
                                     Testimonial
                                 </a>
                             </li>
 
                             <li className="  font-normal">
-                                <a href="#" className="">
+                                <a href="/contact" className="">
                                     Contact us
                                 </a>
                             </li>
@@ -111,7 +106,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright flex gap-4 justify-center items-center w-full h-auto py-5">
-                    <p className="md:text-sm text-xs text-center">© 2021 all copyright reserved. All Rights Reserved. <Link href='/' className="underline"> Rootlet Solution</Link></p>
+                    <p className="md:text-sm text-xs text-center">© 2021 all copyright reserved. All Rights Reserved. <Link target="_blank" href='https://rootletsolutions.com/' className="underline"> Rootlet Solution</Link></p>
 
                 </div>
             </div>
